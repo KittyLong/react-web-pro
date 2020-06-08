@@ -8,6 +8,13 @@ const { Header, Content, Sider } = Layout;
 
 class MyHeader extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      // headerMenus =[]
+      desc: '菜单头组件'
+    }
+  }
   render () {
     return (
       <Layout>
