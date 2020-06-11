@@ -19,12 +19,10 @@ class App extends React.Component {
       },
     };
   }
-  componentDidMount() {
-    // console.log(1);
-    // console.log(this.refs.left);
-    console.log(this.state);
+  componentDidMount () {
+
   }
-  render() {
+  render () {
     return (
       <Layout className="layout-container" ref="container">
         <Header className="header">

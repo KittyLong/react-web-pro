@@ -1,0 +1,76 @@
+{
+  "menuList": [
+    {
+      "menu_level": "1",
+      "menu_name": "受理",
+      "menu_parent": "",
+      "menu_code": "100"
+    },
+    {
+      "menu_level": "1",
+      "menu_name": "办理",
+      "menu_parent": "",
+      "menu_code": "101"
+    },
+    {
+      "menu_level": "1",
+      "menu_name": "运营",
+      "menu_parent": "",
+      "menu_code": "102"
+    },
+    {
+      "menu_level": "1",
+      "menu_name": "审核",
+      "menu_parent": "",
+      "menu_code": "103"
+    },
+    {
+      "menu_level": "2",
+      "menu_name": "特殊页面",
+      "menu_parent": "100",
+      "menu_code": "200"
+    },
+    {
+      "menu_level": "2",
+      "menu_name": "数据表格",
+      "menu_parent": "100",
+      "menu_code": "201"
+    },
+    {
+      "menu_level": "2",
+      "menu_name": "多种测试",
+      "menu_parent": "100",
+      "menu_code": "202"
+    },
+    {
+      "menu_level": "3",
+      "menu_name": "登陆页面",
+      "menu_parent": "200",
+      "menu_code": "300"
+    },
+    {
+      "menu_level": "3",
+      "menu_name": "项目首页",
+      "menu_parent": "200",
+      "menu_code": "301"
+    },
+    {
+      "menu_level": "3",
+      "menu_name": "异常页面",
+      "menu_parent": "200",
+      "menu_code": "302"
+    },
+    {
+      "menu_level": "3",
+      "menu_name": "图表数据展示",
+      "menu_parent": "201",
+      "menu_code": "303"
+    },
+    {
+      "menu_level": "3",
+      "menu_name": "测试地图",
+      "menu_parent": "202",
+      "menu_code": "304"
+    }
+  ]
+}
