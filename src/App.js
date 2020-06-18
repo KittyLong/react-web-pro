@@ -5,7 +5,6 @@ import {
   NotificationOutlined,
 } from "@ant-design/icons";
 import React from "react";
-import ReactDOM from "react-dom";
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -20,7 +19,14 @@ class App extends React.Component {
     };
   }
   componentDidMount () {
-
+    // this.setState({
+    //   style:{
+    //     height:
+    //   }
+    // })
+    this.httpRequest.get('../data/list.json').then(res => {
+      console.log(res)
+    })
   }
   render () {
     return (
@@ -33,7 +39,7 @@ class App extends React.Component {
             <Menu.Item key="3">nav 3</Menu.Item>
           </Menu>
         </Header>
-        <Layout className="layout-left" ref="content">
+        <Layout className="layout-content" ref="content">
           <Sider width={200} className="site-layout-background" ref="left">
             <Menu
               mode="inline"
@@ -65,6 +71,7 @@ class App extends React.Component {
               </SubMenu>
             </Menu>
           </Sider>
+
           <Layout style={{ padding: "0 24px 24px" }} ref="right">
             <Breadcrumb style={{ margin: "16px 0" }}>
               <Breadcrumb.Item>Home</Breadcrumb.Item>
