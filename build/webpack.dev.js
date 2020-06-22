@@ -1,6 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 module.exports = {
   entry: {
     main: path.join(__dirname, '../src/index.js')
@@ -8,6 +7,11 @@ module.exports = {
   output: {
     path: path.join(__dirname, '../dist'),
     filename: '[name]_[chunk:8].js'
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '../')
+    }
   },
   module: {
     rules: [

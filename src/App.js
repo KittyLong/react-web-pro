@@ -5,7 +5,7 @@ import {
   NotificationOutlined,
 } from "@ant-design/icons";
 import React from "react";
-
+const path = require('path')
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 class App extends React.Component {
@@ -19,12 +19,7 @@ class App extends React.Component {
     };
   }
   componentDidMount () {
-    // this.setState({
-    //   style:{
-    //     height:
-    //   }
-    // })
-    this.httpRequest.get('../data/list.json').then(res => {
+    this.httpRequest.get('@data/list.json').then(res => {
       console.log(res)
     })
   }
