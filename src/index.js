@@ -5,12 +5,12 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import request from '../server/Request.js'
 
-let root = document.getElementById("root");
-let height = document.body.offsetHeight;
-let width = document.body.offsetWidth;
+// let root = document.getElementById("root");
+// let height = document.body.offsetHeight;
+// let width = document.body.offsetWidth;
 
-root.style.height = height;
-root.style.width = width;
+// root.style.height = height;
+// root.style.width = width;
 // axios挂载到React原型上
 React.Component.prototype.httpRequest = request
 
