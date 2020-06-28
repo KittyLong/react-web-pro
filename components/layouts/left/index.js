@@ -2,18 +2,20 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import { Layout, Menu } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import PropTypes from 'prop-types';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
-
 class RLeft extends React.Component {
-
   constructor(props) {
     super(props)
     this.state = {
-      // headerMenus =[]
       desc: '左侧菜单'
     }
+  }
+
+  componentWillUnmount () {
+    console.log(this.props)
   }
   render () {
     return (
@@ -41,5 +43,11 @@ class RLeft extends React.Component {
       </Sider>
     )
   }
+}
+RLeft.PropTypes = {
+  menus: PropTypes.array
+}
+RLeft.defaultProps = {
+  menus: []
 }
 export default RLeft

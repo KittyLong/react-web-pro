@@ -1,16 +1,15 @@
+import { Layout, Menu, Breadcrumb } from 'antd';
+import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 import React from 'react'
-import ReactDom from 'react-dom'
-import { Layout, Menu, Header } from 'antd';
-
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
+
 
 class RHeader extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      // headerMenus =[]
       desc: '菜单头组件'
     }
   }

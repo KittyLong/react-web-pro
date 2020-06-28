@@ -11,8 +11,7 @@ class RRight extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      // headerMenus =[]
-      desc: '左侧菜单'
+      desc: '右侧内容区'
     }
   }
   render () {
