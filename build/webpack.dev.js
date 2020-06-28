@@ -10,9 +10,11 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../')
+      '@': path.resolve(__dirname, '../'),
+      '@components': path.resolve(__dirname, '../components')
     }
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
