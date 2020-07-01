@@ -13,6 +13,10 @@ class RLeft extends React.Component {
       desc: '左侧菜单'
     }
   }
+
+  componentWillUnmount () {
+    console.log(this.props)
+  }
   render () {
     return (
       <Sider height={this.props.height} width={200} className="site-layout-background" ref="left">
